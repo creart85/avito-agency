@@ -1,0 +1,268 @@
+/* Three visual metaphors, scoped to the hero and supporting cards. */
+.hero-hook {
+  align-items: center;
+  padding-top: 48px;
+}
+
+.hero-hook h1 {
+  max-width: 650px;
+  font-size: clamp(44px, 4.25vw, 64px);
+  line-height: 1.09;
+  letter-spacing: -2.7px;
+  text-wrap: balance;
+}
+
+.hero-hook h1 > span {
+  display: block;
+}
+
+.hero-hook .hero-description {
+  max-width: 570px;
+  margin-top: 25px;
+}
+
+.hero-hook .hook-hero-visual {
+  display: block;
+  min-height: 0;
+  padding: 0;
+  align-self: center;
+  background: #f4f8ff;
+  border: 1px solid #d9e5f3;
+  border-radius: 22px;
+}
+
+.hook-road-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+.hook-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 26px;
+  background: #fff;
+  border-top: 1px solid #e2eaf5;
+}
+
+.hook-author > img {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #edf7fd;
+}
+
+.hook-author > div {
+  min-width: 0;
+}
+
+.hook-author strong {
+  display: block;
+  font-size: 21px;
+  font-weight: 650;
+}
+
+.hook-author p {
+  margin-top: 3px;
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.hook-author span {
+  display: block;
+  margin-top: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--blue);
+}
+
+.hook-section {
+  padding-block: 84px;
+  background: #f6f9ff;
+  border-top: 1px solid #e2eaf5;
+}
+
+.hook-section .section-heading > p {
+  max-width: 400px;
+}
+
+.hook-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.hook-card {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #d9e5f3;
+  border-radius: 20px;
+}
+
+.hook-card > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: #eef4ff;
+}
+
+.hook-card-copy {
+  padding: 30px 32px 34px;
+}
+
+.hook-card-label {
+  margin-bottom: 16px;
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .7px;
+}
+
+.hook-card h3 {
+  max-width: 520px;
+  font-size: clamp(26px, 2.3vw, 32px);
+  line-height: 1.22;
+  letter-spacing: -.8px;
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+.hook-card-copy > p:last-child {
+  margin-top: 18px;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.hook-next {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+@media (max-width: 1050px) and (min-width: 851px) {
+  .hero-hook {
+    column-gap: 28px;
+  }
+
+  .hero-hook h1 {
+    font-size: 43px;
+    letter-spacing: -1.7px;
+  }
+
+  .hook-author {
+    gap: 12px;
+    padding: 18px;
+  }
+
+  .hook-author > img {
+    width: 64px;
+    height: 64px;
+    flex-basis: 64px;
+  }
+}
+
+@media (max-width: 850px) {
+  .hero-hook {
+    grid-template-columns: 1fr;
+    row-gap: 34px;
+  }
+
+  .hero-hook h1 {
+    max-width: 650px;
+    font-size: clamp(40px, 7.2vw, 60px);
+    letter-spacing: -2px;
+  }
+
+  .hero-hook .hook-hero-visual {
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .hero-hook .hero-proof {
+    margin-top: 0;
+  }
+
+  .hook-card-copy {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-hook {
+    padding-top: 30px;
+    row-gap: 30px;
+  }
+
+  .hero-hook h1 {
+    margin-top: 22px;
+    font-size: clamp(36px, 9.7vw, 48px);
+    line-height: 1.12;
+    letter-spacing: -1.45px;
+  }
+
+  .hero-hook .hero-description {
+    margin-top: 22px;
+    font-size: 18px;
+  }
+
+  .hero-hook .hero-actions {
+    gap: 18px;
+    margin-top: 26px;
+  }
+
+  .hook-author {
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .hook-author > img {
+    width: 68px;
+    height: 68px;
+    flex-basis: 68px;
+  }
+
+  .hook-author strong {
+    font-size: 19px;
+  }
+
+  .hook-author p {
+    font-size: 15px;
+  }
+
+  .hook-author span {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+
+  .hook-section {
+    padding-block: 60px;
+  }
+
+  .hook-cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hook-card-copy {
+    padding: 24px 22px 28px;
+  }
+
+  .hook-card h3 {
+    font-size: 27px;
+  }
+
+  .hook-card-copy > p:last-child {
+    font-size: 17px;
+  }
+
+  .hook-next {
+    justify-content: flex-start;
+  }
+}
