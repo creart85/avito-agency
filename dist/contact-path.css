@@ -1,0 +1,59 @@
+/* Clear entry points within the existing visual system. */
+.hero-actions > .text-link {
+  min-height: 44px;
+}
+
+.calculator-intro .calculator-help-link {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+  margin-top: 10px;
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.45;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.calculator-help-link:hover {
+  color: #975016;
+}
+
+@media (max-width: 650px) {
+  .header-mobile {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 9px 12px;
+    color: var(--blue);
+    background: #fff;
+    border: 1px solid #aac9df;
+    border-radius: 7px;
+    white-space: nowrap;
+  }
+
+  .hero-hook .eyebrow {
+    font-size: 12px;
+    letter-spacing: .8px;
+    line-height: 1.6;
+  }
+
+  .hero-actions > .button {
+    min-height: 54px;
+  }
+}
+
+@media (max-width: 360px) {
+  .header-inner {
+    gap: 10px;
+  }
+
+  .header-mobile {
+    padding-inline: 10px;
+  }
+}

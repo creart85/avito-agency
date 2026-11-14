@@ -3,6 +3,7 @@
 !/.gitignore
 !/.nojekyll
 !/index.html
+!/sitemap.xml
 !/README.md
 !/package.json
 !/Открыть черновик.cmd
