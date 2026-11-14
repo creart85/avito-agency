@@ -1,0 +1,23 @@
+# Only the website, its checks, and public instructions belong in GitHub.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/README.md
+!/package.json
+!/Открыть черновик.cmd
+!/dist/
+!/dist/**
+!/tests/
+!/tests/**
+
+# Never include credentials or personal agent instructions.
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/credentials*
+**/secrets*
+**/AGENTS.md
