@@ -1,0 +1,152 @@
+/* Supplied photography and creatives within the existing blue/orange brand. */
+.photo-hero, .photo-moment, .creative-item { margin: 0; }
+
+.hero-photos { grid-template-columns: 1.08fr 1fr; column-gap: 64px; }
+.hero-photos .photo-hero {
+  display: block;
+  min-height: 0;
+  padding: 0;
+  align-self: center;
+  border: 1px solid #d9d8da;
+  border-radius: 22px;
+  background: #d1cdd0;
+}
+.photo-hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 50% 12%;
+}
+.photo-hero figcaption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 22px 26px;
+  background: #fff;
+  border-top: 3px solid var(--orange);
+}
+.photo-hero strong { font-size: 24px; font-weight: 650; }
+.photo-hero figcaption p { margin-top: 3px; color: var(--muted); font-size: 15px; }
+.photo-signature { color: var(--blue); font-size: 14px; line-height: 1.5; }
+
+.about-photos { grid-column: 1 / -1; min-width: 0; }
+.photo-strip-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 20px; }
+.photo-strip-heading > p { font-size: 22px; font-weight: 600; letter-spacing: -.4px; }
+.photo-scroll-hint { display: none; color: var(--muted); font-size: 14px; }
+.photo-strip,
+.creative-strip {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 40px) / 3);
+  gap: 20px;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  scrollbar-width: auto;
+  scrollbar-color: #6c8aa4 #e6eef4;
+  padding: 4px 4px 16px;
+}
+.photo-moment,
+.creative-item { min-width: 0; scroll-snap-align: start; }
+.photo-moment > a,
+.creative-item > a { display: block; border-radius: 16px; overflow: hidden; background: #e8e6e7; }
+.photo-moment img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+.photo-speaking img { object-position: 55% 28%; }
+.photo-cycling img { object-position: 50% 8%; }
+.photo-outdoors img { object-position: 50% 18%; }
+.photo-moment figcaption,
+.creative-item figcaption { padding: 18px 0 0; font-size: 19px; font-weight: 600; line-height: 1.4; }
+.photo-moment figcaption span,
+.creative-item figcaption span { display: block; margin-top: 6px; font-size: 15px; font-weight: 400; color: var(--muted); line-height: 1.55; }
+
+.road-story { display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: 48px; margin-bottom: 36px; }
+.road-story > img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.road-story h3 { font-size: clamp(30px, 3vw, 43px); line-height: 1.2; font-weight: 550; letter-spacing: -1px; }
+.road-story > div > p:last-child { margin-top: 20px; max-width: 420px; color: var(--muted); font-size: 18px; }
+
+.creative-section { padding: 84px 0; background: #fff7ef; border-bottom: 1px solid #eadfd5; }
+.creative-section .section-heading > p { max-width: 410px; }
+.creative-instruction { margin: -12px 0 20px; color: var(--muted); font-size: 15px; }
+.creative-strip { grid-auto-columns: calc((100% - 48px) / 3); gap: 24px; scrollbar-color: #a6500d #f0e3d7; }
+.creative-item > a { background: #fff; border-radius: 12px; border: 1px solid #e2d8d0; }
+.creative-item img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.creative-next { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-top: 26px; }
+.creative-next > p { max-width: 620px; font-size: 15px; color: var(--muted); }
+.creative-next > .text-link { flex: 0 0 auto; min-height: 44px; }
+
+.contact-person { display: flex; align-items: center; gap: 22px; margin-bottom: 24px; }
+.contact-person > img { width: 120px; height: 120px; flex: 0 0 120px; object-fit: cover; border-radius: 18px; }
+.contact-person strong { font-size: 24px; font-weight: 600; }
+.contact-links .contact-person p { margin-top: 5px; font-size: 16px; line-height: 1.5; }
+
+.photo-strip:focus-visible,
+.creative-strip:focus-visible { outline: 2px solid var(--blue); outline-offset: 6px; border-radius: 4px; }
+.photo-moment > a:focus-visible,
+.creative-item > a:focus-visible { outline-offset: 3px; }
+
+@media (max-width: 1150px) {
+  .hero-photos { column-gap: 32px; }
+  .photo-hero figcaption { padding: 18px; }
+  .photo-signature { font-size: 13px; }
+  .creative-next { flex-direction: column; align-items: flex-start; gap: 14px; }
+}
+@media (max-width: 950px) {
+  .creative-strip { grid-auto-columns: calc((100% - 24px) / 2); }
+  .road-story { gap: 30px; }
+}
+@media (max-width: 850px) {
+  .hero-photos { grid-template-columns: 1fr; }
+  .hero-photos .photo-hero { max-width: 620px; width: 100%; margin-inline: auto; }
+  .photo-hero-image { aspect-ratio: 1; }
+  .road-story { grid-template-columns: 1fr; gap: 26px; }
+  .road-story > img { max-width: 620px; }
+  .road-story > div > p:last-child { max-width: 620px; }
+  .photo-strip { grid-auto-columns: calc((100% - 20px) / 2); }
+  .photo-scroll-hint { display: block; }
+}
+@media (max-width: 650px) {
+  .hero-photos { padding-top: 26px; row-gap: 20px; }
+  .hero-photos .hero-copy { display: contents; }
+  .hero-photos .eyebrow { grid-row: 1; margin: 0; }
+  .hero-photos h1 { grid-row: 2; margin: 0; font-size: clamp(34px, 9.3vw, 43px); line-height: 1.1; letter-spacing: -1.3px; }
+  .hero-photos .hero-actions { grid-row: 3; margin: 0; gap: 12px; }
+  .hero-photos .photo-hero { grid-row: 4; border-radius: 18px; }
+  .hero-photos .hero-description { grid-row: 5; margin: 0; font-size: 18px; }
+  .hero-photos .hero-proof { grid-row: 6; margin-top: 8px; }
+  .photo-hero-image { aspect-ratio: 1; object-position: 50% 12%; }
+  .photo-hero strong { font-size: 22px; }
+  .photo-hero figcaption { gap: 8px; padding: 17px 18px; }
+  .photo-hero figcaption p { font-size: 14px; }
+  .photo-signature { font-size: 13px; }
+  .photo-strip-heading { display: block; margin-bottom: 15px; }
+  .photo-strip-heading > p { font-size: 21px; }
+  .photo-scroll-hint { margin-top: 7px; }
+  .photo-strip { grid-auto-columns: 80%; gap: 16px; }
+  .photo-moment figcaption { font-size: 18px; padding-top: 14px; }
+  .photo-moment figcaption span { font-size: 15px; }
+  .road-story { margin-bottom: 28px; }
+  .road-story h3 { font-size: 31px; }
+  .road-story > div > p:last-child { font-size: 17px; margin-top: 16px; }
+  .creative-section { padding: 60px 0; }
+  .creative-strip { grid-auto-columns: 84%; gap: 16px; }
+  .creative-instruction { margin-top: -6px; font-size: 14px; }
+  .creative-item figcaption { font-size: 18px; padding-top: 14px; }
+  .creative-next { margin-top: 20px; }
+  .creative-next > .text-link { flex: 0 1 auto; max-width: 100%; gap: 12px; }
+  .contact-person { gap: 16px; margin-bottom: 20px; }
+  .contact-person > img { width: 88px; height: 88px; flex-basis: 88px; border-radius: 14px; }
+  .contact-person strong { font-size: 21px; }
+  .contact-links .contact-person p { font-size: 15px; }
+}
