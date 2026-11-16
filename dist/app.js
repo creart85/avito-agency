@@ -1,7 +1,7 @@
 import { profile, services, packages } from './data.js';
 import { calculateEstimate, buildEstimateText, parseQuantity, formatMoney } from './calculator.js';
 import { initializePageNavigation } from './navigation.js';
-import { initializeCaseGalleries } from './gallery.js?v=20261116-recruitment';
+import { initializeCaseGalleries } from './gallery.js?v=20261116-webseo';
 
 const catalog = { services, packages };
 const state = { mode: 'packages', launchId: '', monthlyId: '', quantities: {} };
