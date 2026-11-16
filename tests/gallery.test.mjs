@@ -5,7 +5,7 @@ let gallery = {};
 try { gallery = await import('../dist/gallery.js'); }
 catch (error) { if (error.code !== 'ERR_MODULE_NOT_FOUND') throw error; }
 
-test('the ten screenshots stay in the four groups supplied by Artur', () => {
+test('the original screenshots keep their supplied case groups', () => {
   assert.equal(typeof gallery.getGalleryFrame, 'function', 'Галереи ещё не реализованы');
   assert.equal(gallery.getGalleryFrame('accounting').total, 1);
   for (const id of ['cosmetology', 'furniture', 'motorcycles']) {

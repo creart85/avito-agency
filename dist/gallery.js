@@ -1,4 +1,4 @@
-// Original screenshots supplied by Artur, grouped in the order of his message.
+// Original screenshots supplied by Artur, grouped by case.
 export const caseGalleries = {
   accounting: {
     title: 'Бухгалтерские услуги',
@@ -28,6 +28,14 @@ export const caseGalleries = {
       { src: './assets/cases/motorcycles-01.jpg', caption: '1–30 июня · 130 контактов · 626,6 ₽ за контакт. На снимках — показатели Авито.', alt: 'Мототехника: статистика Авито за июнь, 13 217 просмотров и 130 контактов.' },
       { src: './assets/cases/motorcycles-02.jpg', caption: '1–31 июля · 119 контактов · 999,3 ₽ за контакт.', alt: 'Мототехника: статистика Авито за июль, 16 742 просмотра и 119 контактов.' },
       { src: './assets/cases/motorcycles-03.jpg', caption: '1–29 августа · 115 контактов · 924,6 ₽ за контакт.', alt: 'Мототехника: статистика Авито за 1–29 августа, 32 077 просмотров и 115 контактов.' }
+    ]
+  },
+  machinery: {
+    title: 'Спецтехника · Полуприцепы',
+    items: [
+      { src: './assets/cases/machinery-2025-04.png', caption: '1–30 апреля 2025 · 58 контактов · 4 128,4 ₽ за контакт. На снимках — показатели обращений в Авито.', alt: 'Спецтехника: статистика Авито за апрель 2025, 3 589 просмотров и 58 контактов.' },
+      { src: './assets/cases/machinery-2025-05.png', caption: '1–31 мая 2025 · 44 контакта · 4 989,5 ₽ за контакт.', alt: 'Спецтехника: статистика Авито за май 2025, 2 470 просмотров и 44 контакта.' },
+      { src: './assets/cases/machinery-2025-06.png', caption: '1–30 июня 2025 · 88 контактов · 3 580,2 ₽ за контакт.', alt: 'Спецтехника: статистика Авито за июнь 2025, 3 907 просмотров и 88 контактов.' }
     ]
   }
 };
