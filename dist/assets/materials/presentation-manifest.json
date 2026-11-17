@@ -1,6 +1,17 @@
 {
-  "catalogSha256": "752fab69f4d1d8a31faab8f582a67de630d419a6a48e74f84c54abd9b9dcffa2",
-  "pdfSha256": "6857035fcce454db3ee6cb66408435392a42ceaf069e5d92dd91ebf5fb7c76b9",
+  "documentType": "client-responsibilities",
+  "sourceSha256": "0d41cfefe1e70cbf648ce1a002817ae16dedd7bb5ef7565b40686a8c0a75c0ef",
+  "pdfSha256": "fb96d278e99b5d7df61fa9dd490215b001ffcc5fdbcf3454d24feb4dee526161",
   "pageCount": 8,
+  "primarySections": [
+    "start-work",
+    "ongoing-work",
+    "out-of-scope",
+    "client-inputs",
+    "getting-started"
+  ],
+  "workstreamCount": 8,
+  "exclusionCount": 3,
+  "clientRequirementCount": 5,
   "updatedOn": "2026-11-17"
 }
