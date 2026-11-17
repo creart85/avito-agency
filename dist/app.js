@@ -1,4 +1,4 @@
-import { profile, services, packages } from './data.js';
+import { profile, services, packages } from './data.js?v=20261117-brand';
 import { calculateEstimate, buildEstimateText, parseQuantity, formatMoney } from './calculator.js';
 import { initializePageNavigation } from './navigation.js';
 import { initializeCaseGalleries } from './gallery.js?v=20261117-cases';

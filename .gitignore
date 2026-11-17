@@ -1,6 +1,7 @@
 # Only the website, its checks, and public instructions belong in GitHub.
 /*
 !/.gitignore
+!/.gitattributes
 !/.nojekyll
 !/index.html
 !/sitemap.xml

@@ -1,0 +1,2 @@
+# PDF bytes must never be changed by text line-ending conversion on Windows.
+*.pdf binary

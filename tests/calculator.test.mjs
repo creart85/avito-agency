@@ -80,7 +80,7 @@ test('copied quote includes selected work periods totals and excluded budget', (
   const result = calculate({ mode: 'services', quantities: { '01': 1, '10': 2, '25': 1 } });
   assert.equal(typeof api.buildEstimateText, 'function');
   const text = api.buildEstimateText(result).replaceAll('\u00a0', ' ').replaceAll('\u202f', ' ');
-  assert.match(text, /Консультация авитолога/);
+  assert.match(text, /Консультация по продвижению на Авито/);
   assert.match(text, /Уникальное объявление/);
   assert.match(text, /2 × 2 000/);
   assert.match(text, /Разово: 9 000 ₽/);

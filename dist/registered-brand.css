@@ -1,0 +1,8 @@
+/* The owner's supplied wordmark is used as-is, without redrawing the mark. */
+.header .brand.brand-registered { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; min-width: 0; flex-shrink: 1; }
+.brand-registered .brand-wordmark { display: block; width: clamp(158px, 20vw, 248px); max-width: 100%; height: auto; }
+.header .brand-registered small { margin: 0; font-size: 11px; line-height: 1.4; letter-spacing: 1px; font-weight: 500; }
+@media (max-width: 650px) {
+  .header .brand-registered small { display: none; }
+  .brand-registered .brand-wordmark { width: 158px; }
+}
