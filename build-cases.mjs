@@ -35,7 +35,7 @@ ${studies.map(renderCaseStudy).join('\n')}
       <div class="case-controls" id="case-controls" hidden><span class="case-counter" id="case-counter" aria-hidden="true"></span><div class="case-dots" id="case-dots" role="group" aria-label="Страницы кейсов"></div><div class="case-arrows"><button type="button" id="cases-previous" aria-label="Предыдущие кейсы" aria-controls="cases-track">←</button><button type="button" id="cases-next" aria-label="Следующие кейсы" aria-controls="cases-track">→</button></div></div>
       <p class="sr-only" id="cases-announcement" role="status" aria-live="polite" aria-atomic="true"></p>
       <p class="case-note">Это результаты отдельных проектов за указанные периоды. Продажи, договоры, доход и закрытие позиций приведены по данным клиентов. Показатели вашего бизнеса зависят от спроса, предложения, бюджета и обработки обращений.</p>
-      <div class="cases-contact"><div><h3>Обсудим вашу задачу</h3><p>Расскажите, что нужно бизнесу: обращения, продажи, загрузка специалистов или сотрудники. Я предложу подход к продвижению и буду лично контролировать работу над проектом.</p></div><a class="button button-primary" data-contact="telegram" href="https://t.me/creart85" target="_blank" rel="noopener noreferrer">Обсудить мой проект <span aria-hidden="true">↗</span></a></div>
+      <div class="cases-contact"><div><h3>Обсудим вашу задачу</h3><p>Расскажите, что нужно бизнесу: обращения, продажи, загрузка специалистов или сотрудники. Я предложу подход к продвижению и буду лично контролировать работу над проектом.</p></div><a class="button button-primary" data-contact="vk" href="https://vk.ru/creart85" target="_blank" rel="noopener noreferrer">Обсудить мой проект <span aria-hidden="true">↗</span></a></div>
     </div></section>`;
 }
 

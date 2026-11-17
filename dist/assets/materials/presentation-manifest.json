@@ -1,7 +1,9 @@
 {
+  "contactUrl": "https://vk.ru/creart85",
+  "qrSha256": "690e6056d2c54053b2f21b8393c715e7ce9634314336eb312973c8ae8ea600e6",
   "documentType": "client-responsibilities",
   "sourceSha256": "0d41cfefe1e70cbf648ce1a002817ae16dedd7bb5ef7565b40686a8c0a75c0ef",
-  "pdfSha256": "fb96d278e99b5d7df61fa9dd490215b001ffcc5fdbcf3454d24feb4dee526161",
+  "pdfSha256": "4f59b26eb60d8f5bf750f4a661d62ee69ec5c68ad7690fab7856d60825ec6841",
   "pageCount": 8,
   "primarySections": [
     "start-work",

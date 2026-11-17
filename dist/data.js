@@ -3,7 +3,7 @@ export const profile = {
   "name": "Артур Гатин",
   "agency": "Агентство Артур Гатин",
   "role": "Руководитель агентства по продвижению на Авито",
-  "telegram": "https://t.me/creart85",
+  "vk": "https://vk.ru/creart85",
   "phone": "+79198693760",
   "phoneLabel": "+7 919 869-37-60",
   "email": "creart85@yandex.ru"

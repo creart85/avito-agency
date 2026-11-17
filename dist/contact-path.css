@@ -57,3 +57,36 @@
     padding-inline: 10px;
   }
 }
+
+/* The supplied VK QR stays sharp and includes space around the code. */
+.contact-section .contact-inner {
+  align-items: center;
+}
+
+.contact-links .contact-qr {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: fit-content;
+  max-width: 100%;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact-qr img {
+  display: block;
+  flex: 0 0 132px;
+  width: 132px;
+  height: 132px;
+  padding: 10px;
+  box-sizing: content-box;
+  background: #fff;
+  border: 1px solid #d7e6f0;
+  border-radius: 10px;
+}
+
+@media (max-width: 360px) {
+  .contact-links .contact-qr { gap: 12px; font-size: 14px; }
+  .contact-qr img { flex-basis: 108px; width: 108px; height: 108px; }
+}

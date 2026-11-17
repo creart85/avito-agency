@@ -1,4 +1,4 @@
-import { profile, services, packages } from './data.js?v=20261117-brand';
+import { profile, services, packages } from './data.js?v=20261117-vk';
 import { calculateEstimate, buildEstimateText, parseQuantity, formatMoney } from './calculator.js';
 import { initializePageNavigation } from './navigation.js';
 import { initializeCaseGalleries } from './gallery.js?v=20261117-cases';
@@ -12,7 +12,7 @@ let previousGroupOpen = new Map();
 
 document.querySelectorAll('[data-contact]').forEach(link => {
   const type = link.dataset.contact;
-  link.href = type === 'telegram' ? profile.telegram : type === 'phone' ? `tel:${profile.phone}` : `mailto:${profile.email}`;
+  link.href = type === 'vk' ? profile.vk : type === 'phone' ? `tel:${profile.phone}` : `mailto:${profile.email}`;
   if (type === 'phone') link.textContent = profile.phoneLabel || profile.phone;
   if (type === 'email') link.textContent = profile.email;
 });
