@@ -11,7 +11,8 @@ test('the original screenshots keep their supplied case groups', () => {
   for (const id of ['cosmetology', 'furniture', 'motorcycles']) {
     assert.equal(gallery.getGalleryFrame(id).total, 3);
   }
-  assert.match(gallery.getGalleryFrame('furniture', 1).item.caption, /608/);
+  assert.match(gallery.getGalleryFrame('furniture', 0).item.caption, /608/);
+  assert.match(gallery.getGalleryFrame('furniture', 1).item.caption, /357/);
   assert.match(gallery.getGalleryFrame('cosmetology', 2).item.caption, /63/);
 });
 
